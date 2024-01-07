@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvTemperature"
+        style="@style/Card"
+        app:layout_constraintBottom_toTopOf="@+id/cvHumidity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread">
+
+        <androidx.constraintlayout.widget.ConstraintLayout style="@style/MatchParent">
+
+            <ImageView
+                android:id="@+id/ivTemperature"
+                style="@style/DescIcon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/temperature"
+                android:contentDescription="@string/text_view_temperature" />
+
+            <TextView
+                android:id="@+id/tvTemperatureValue"
+                style="@style/ValueText"
+                app:layout_constraintEnd_toEndOf="@+id/ivTemperature"
+                app:layout_constraintStart_toStartOf="@+id/ivTemperature"
+                app:layout_constraintTop_toBottomOf="@+id/ivTemperature"
+                tools:text="25 °C" />
+
+
+            <TextView
+                android:id="@+id/tvTemperature"
+                style="@style/LabelText"
+                android:text="@string/text_view_temperature"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tvTemperatureValue"
+                app:layout_constraintStart_toStartOf="@+id/tvTemperatureValue"
+                app:layout_constraintTop_toBottomOf="@+id/tvTemperatureValue" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvHumidity"
+        style="@style/Card"
+        app:layout_constraintBottom_toTopOf="@+id/cvAirQuality"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvTemperature">
+
+        <androidx.constraintlayout.widget.ConstraintLayout style="@style/MatchParent">
+
+            <ImageView
+                android:id="@+id/ivHumidity"
+                style="@style/DescIcon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/humidity"
+                android:contentDescription="@string/text_view_humidity" />
+
+            <TextView
+                android:id="@+id/tvHumidityValue"
+                style="@style/ValueText"
+                app:layout_constraintEnd_toEndOf="@+id/ivHumidity"
+                app:layout_constraintStart_toStartOf="@+id/ivHumidity"
+                app:layout_constraintTop_toBottomOf="@+id/ivHumidity"
+                tools:text="30 %" />
+
+            <TextView
+                android:id="@+id/tvHumidity"
+                style="@style/LabelText"
+                android:text="@string/text_view_humidity"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tvHumidityValue"
+                app:layout_constraintStart_toStartOf="@+id/tvHumidityValue"
+                app:layout_constraintTop_toBottomOf="@+id/tvHumidityValue" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvAirQuality"
+        style="@style/Card"
+        app:layout_constraintBottom_toTopOf="@+id/btViewMore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvHumidity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout style="@style/MatchParent">
+
+            <ImageView
+                android:id="@+id/ivAirQuality"
+                style="@style/DescIcon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/air_quality"
+                android:contentDescription="@string/text_view_air_quality" />
+
+            <TextView
+                android:id="@+id/tvAirQualityValue"
+                style="@style/ValueText"
+                app:layout_constraintEnd_toEndOf="@+id/ivAirQuality"
+                app:layout_constraintStart_toStartOf="@+id/ivAirQuality"
+                app:layout_constraintTop_toBottomOf="@+id/ivAirQuality"
+                tools:text="200 PPM" />
+
+            <TextView
+                android:id="@+id/tvAirQuality"
+                style="@style/LabelText"
+                android:text="@string/text_view_air_quality"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tvAirQualityValue"
+                app:layout_constraintStart_toStartOf="@+id/tvAirQualityValue"
+                app:layout_constraintTop_toBottomOf="@+id/tvAirQualityValue" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <Button
+        android:id="@+id/btViewMore"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/button_view_more"
+        app:layout_constraintBottom_toTopOf="@+id/tvTimestamp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/text_view_updating"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

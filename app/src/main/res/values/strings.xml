@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Smart Air Quality App</string>
+
+    <!-- developer info -->
+    <string name="developer_name">Vivekanand Mishra</string>
+    <string name="developer_email">mvivekanandji@gmail.com</string>
+    <string name="developer_company">V&amp;A Soft. Ltd.</string>
+    <string name="developer_address"> Delhi, India</string>
+
+    <!-- text view -->
+    <string name="text_view_fetching_data">Fetching…</string>
+    <string name="text_view_temperature">Temperature</string>
+    <string name="text_view_temperature_value"> %1$s °C</string>
+    <string name="text_view_humidity">Humidity</string>
+    <string name="text_view_humidity_value">%1$s %%</string>
+    <string name="text_view_air_quality">Air Quality</string>
+    <string name="text_view_air_quality_value">%1$s PPM </string>
+    <string name="text_view_updating">Updating…</string>
+    <string name="text_view_updated">Updated at %1$s</string>
+
+    <!-- button -->
+    <string name="button_view_more">View More</string>
+
+</resources>

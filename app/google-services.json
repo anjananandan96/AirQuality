@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "799323171027",
+    "project_id": "weather-station-175a8",
+    "storage_bucket": "weather-station-175a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:799323171027:android:880d43659b1d1938afcc26",
+        "android_client_info": {
+          "package_name": "com.airquality.weatherstation"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDwwjO4XVu4Fch9vGkZVQ9Swgs-qAl55I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

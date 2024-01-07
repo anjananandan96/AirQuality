@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- text size -->
+    <dimen name="text_size_value">48sp</dimen>
+    <dimen name="text_size_value_label">20sp</dimen>
+
+    <!-- descriptive icons -->
+    <dimen name="des_icon_width">80dp</dimen>
+    <dimen name="des_icon_height">80dp</dimen>
+</resources>
